@@ -90,7 +90,17 @@ variable "instance_tags" {
     }
   
 }
+variable "create_ingress_rules" {
+  description = "Whether to create the ingress rule"
+  type        = bool
+  default     = true
+}
 
+variable "create_egress_rules" {
+  description = "Whether to create the egress rule"
+  type        = bool
+  default     = true
+}
 
 
 

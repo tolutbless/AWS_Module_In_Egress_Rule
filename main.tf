@@ -17,6 +17,9 @@ module "sec_group" {
     secgroup = var.secgroup
     vpc_id = module.vpc.vpc_id
     cidr_block1 = var.cidr_block1
+    create_egress_rules = true
+    create_ingress_rules = true
+
 
 }
 
